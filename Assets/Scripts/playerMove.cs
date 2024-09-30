@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(moveInputX * moveSpeed, rb.velocity.y); // Move the player horizontally
 
         // If you want to allow vertical movement without jumping, you can uncomment this:
-        // rb.velocity = new Vector2(rb.velocity.x, moveInputY * moveSpeed);
+         rb.velocity = new Vector2(rb.velocity.x, moveInputY * moveSpeed);
     }
 
     private void Jump()
